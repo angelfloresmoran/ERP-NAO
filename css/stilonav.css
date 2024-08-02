@@ -1,0 +1,24 @@
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(203, 203, 203);
+    height: 7%;
+    width: 100%;
+    position: fixed;
+    padding: 5px;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgb(139, 139, 139);
+    z-index: 9;
+}
+
+.Nava{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tittle h4{
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    
+}

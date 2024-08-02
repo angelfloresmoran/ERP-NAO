@@ -1,0 +1,147 @@
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+ body{
+  background: linear-gradient(90deg, red,rgb(127, 38, 228),rgb(128, 0, 122),rgb(218, 7, 77) );
+  background-size: 400% 400%;
+  position: relative;
+  animation:cambiar 8s ease infinite;
+ }
+
+ .contenedor{
+  display:flex;
+  width: 900px;
+  height: 500px;
+  border-radius: 50px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  margin: auto;
+  margin-top: 62px;
+  
+
+  
+ }
+
+ .image{
+  background-image: url(../img/logo-formulario.jpeg);
+  border-radius: 50px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px 50px;
+  width: 50%;
+ }
+
+
+.contenedor h1{
+  color:#ffff;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+
+}
+ 
+.formulario{
+  background: #46404073; /*linear-gradient(90deg, red,rgb(127, 38, 228),rgb(128, 0, 122),rgb(218, 7, 77) );
+  background-size: 400% 400%;*/
+  border: 2px solid rgba(255, 255, 255, .2);
+  position: relative;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  /*animation:cambiar 30s ease infinite;*/
+  padding: 100px 100px;
+  border-radius: 50px;
+  width: 50%;
+  
+  /*margin: 5% 4% 0% 18%;
+  
+  text-align: center;
+  background-color: black;
+  border-radius: 50px;
+  */
+}
+
+@keyframes cambiar{
+    
+  0%{background-position: 0 50%;}
+  50%{background-position: 100% 50%;}
+  100%{background-position: 0 50%;}
+}
+
+form h1{
+  color:#ffff;
+  text-align: center;
+}
+
+
+.inputs{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 35px 0 20px 3px;
+  
+}
+
+
+
+.inputs input{
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  border:none;
+  border: solid 0.4vh rgba(0, 0, 0, 0.87);
+  background: transparent;
+  font-size: 14px;
+  padding: 20px 45px 20px 10px;
+  }
+
+::placeholder{
+  color: black;
+  }
+
+  .inputs i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  input[type="submit"]:hover {
+    background-color:#8a8a8a8f;
+  }
+  
+  input[type="submit"] {
+    padding: 10px;
+    margin: 35px 80px;
+    border-radius: 50px;
+    border:none;
+    border: solid 0.4vh rgba(0, 0, 0, 0.87);
+    background: transparent;
+  }
+
+
+
+
+
+
+@media(max-width:990px) {
+
+  .contenedor{
+    width:  350px;
+    height: 600px;
+    margin-top: 150px;
+
+  }
+  .image{
+     display: none;
+  }
+
+  .formulario{
+    width: 100%;
+    padding: 50px;
+  }
+}
+
